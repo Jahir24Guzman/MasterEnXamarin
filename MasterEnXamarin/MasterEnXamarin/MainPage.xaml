@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterEnXamarin.MainPage"
+             BackgroundColor="LightGray">
+
+    <StackLayout>
+        <Label Text="Hola Mundo en Xamarin"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               BackgroundColor="Gray"
+               Margin="40"
+               Padding="5"
+               TextDecorations="Underline"
+               CharacterSpacing="0"
+               TextTransform="Uppercase">
+        </Label>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Esta aplicación esta creada con Xamarin.Forms y esto es un master"
+                   x:Name="lblTexto"
+                   LineBreakMode="TailTruncation"
+                   FontSize="Medium"
+                   FontAttributes="Italic"
+                   Margin="20"
+                   TextDecorations="None"
+                   TextTransform="Uppercase">
+            </Label>
+            <Button Text="Ver más"
+                    BorderWidth="2"
+                    BorderColor="Black"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    CornerRadius="30"
+                    x:Name="btnVerMas"
+                    Clicked="btnVerMas_Clicked"
+            ></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Image
+                    Source="https://e7.pngegg.com/pngimages/304/124/png-clipart-xamarin-android-cross-platform-native-studio-blue-angle.png"
+                    WidthRequest="80"
+                    HeightRequest="80"
+            ></Image>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
